@@ -1,0 +1,23 @@
+@import '../../partials/theme';
+
+.nav-bar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $color-main-grey;
+
+  .nav-header {
+
+    border-bottom: 1px solid white;
+    padding: 20px 10px;
+
+    h1 {
+      font-size: 16px;
+      color: white;
+    }
+  }
+}
+
+.router-link-active {
+  background-color: white;
+}

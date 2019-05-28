@@ -1,3 +1,9 @@
-<p>
-  nav-bar works!
-</p>
+<nav class="nav-bar-container">
+  <div class="nav-header">
+    <h1>Menú</h1>
+  </div>
+  <ul>
+    <li [routerLink]="['directory']" routerLinkActive="router-link-active">Directorio</li>
+    <li [routerLink]="['tempDirectory']" routerLinkActive="router-link-active">Directorio Temporal</li>
+  </ul>
+</nav>
