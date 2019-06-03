@@ -1,3 +1,13 @@
-<p>
-  temp-directory works!
-</p>
+<section class="directory-container">
+  <section class="contact-list-container">
+    <app-contact-list [contactsList]="tempContactsList$ | async" (selectedContact)="selectContact($event)">
+    </app-contact-list>
+    <button (click)="addContact()">Add</button>
+  </section>
+  <section class="contact-container-detail">
+    <app-contact-detail *ngIf="!shouldCreateContact" [contact]="selectedContact" (validate)="validateContact($event)"></app-contact-detail>
+    <!-- create contact component -->
+    <app-create-contact *ngIf="shouldCreateContact" (createContact)="createContact($event)"></app-create-contact>
+  </section>
+
+</section>

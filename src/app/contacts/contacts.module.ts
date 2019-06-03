@@ -7,6 +7,8 @@ import { ContactListComponent } from './contact-list/contact-list.component';
 import { TempDirectoryComponent } from './temp-directory/temp-directory.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { ContactsRoutingModule } from './contacts-routing.module';
+import { CreateContactComponent } from './create-contact/create-contact.component';
+import { ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { ContactsRoutingModule } from './contacts-routing.module';
     ContactDetailComponent,
     ContactListComponent,
     TempDirectoryComponent,
-    DirectoryComponent]
+    DirectoryComponent,
+    CreateContactComponent]
     ,
   imports: [
     CommonModule,
-    ContactsRoutingModule
+    ContactsRoutingModule,
+    ReactiveFormsModule,
   ]
 })
 export class ContactsModule { }

@@ -1,5 +1,5 @@
 export enum IdType {
-  CEDULA = 'Cedula',
-  PASAPORTE = 'Pasaporte',
-  TARJETA_IDENTIDAD = 'TarjetaIdentidad'
+  CEDULA = 'CEDULA',
+  PASAPORTE = 'PASAPORTE',
+  TARJETA_IDENTIDAD = 'TARJETA_IDENDITAD'
 }

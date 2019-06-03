@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Contact } from '../interfaces/contact';
 
 @Component({
@@ -9,9 +9,15 @@ import { Contact } from '../interfaces/contact';
 export class ContactDetailComponent implements OnInit {
 
   @Input() contact: Contact;
-  constructor() { }
+  @Output() validate: EventEmitter<Contact>;
+  constructor() {
+    this.validate = new EventEmitter<Contact>();
+   }
 
   ngOnInit() {
   }
 
+  validateContact(contact: Contact) {
+    this.validate.emit(contact);
+  }
 }

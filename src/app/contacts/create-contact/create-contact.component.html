@@ -1,0 +1,33 @@
+<section>
+  <!-- <div>
+    <label for=""></label>
+    <select [(ngModel)]="model">
+      <option *ngFor="let item of list" [value]="item">{{item}}</option>
+    </select>
+  </div> -->
+  <form [formGroup]="createContactForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="indentification">Identificación</label>
+      <input type="text" formControlName="identification" id="indentification">
+    </div>
+    <div>
+      <label for="expedition-date">Edad</label>
+      <input type="text" formControlName="age" id="age">
+    </div>
+    <div>
+      <label for="phone">Teléfono</label>
+      <input type="text" formControlName="phone" id="phone">
+    </div>
+    <div>
+      <label for="name">Nombres</label>
+      <input type="text" formControlName="name" id="name">
+    </div>
+    <div>
+      <label for="last-name">Apellidos</label>
+      <input type="text" formControlName="lastName" id="last-name">
+    </div>
+    <div>
+      <button type="submit">Create</button>
+    </div>
+  </form>
+</section>
