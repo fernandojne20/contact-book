@@ -11,9 +11,11 @@ export class CreateContactComponent implements OnInit {
 
   createContactForm: FormGroup;
   @Output() createContact: EventEmitter<Contact>;
+  @Output() cancel: EventEmitter<any>;
 
   constructor(private formBuilder: FormBuilder) {
     this.createContact = new EventEmitter<Contact>();
+    this.cancel = new EventEmitter<any>();
    }
 
   ngOnInit() {
@@ -29,6 +31,10 @@ export class CreateContactComponent implements OnInit {
   onSubmit() {
     if (this.createContactForm.invalid === true) { return; }
     this.createContact.emit(this.createContactForm.value);
+  }
+
+  cancelCreation() {
+    this.cancel.emit();
   }
 
 }

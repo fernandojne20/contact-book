@@ -10,7 +10,8 @@ import { HttpClient, HttpParams} from '@angular/common/http';
 })
 export class ContactService {
 
-  BASE_URL = 'http://localhost:3000';
+  // BASE_URL = 'http://localhost:3000';
+  BASE_URL = 'https://contact-book-addi.herokuapp.com';
   constructor(private http: HttpClient) { }
 
 

@@ -24,6 +24,7 @@ export class TempDirectoryComponent implements OnInit {
   }
 
   selectContact(contact: Contact) {
+    this.shouldCreateContact = false;
     this.selectedContact = contact;
   }
 
@@ -60,6 +61,10 @@ export class TempDirectoryComponent implements OnInit {
       this.contactScore(response, contact);
     });
 
+  }
+
+  cancelCreation() {
+    this.shouldCreateContact = false;
   }
 
   private citizenAndLegalValidation(citizen, legal, contact: Contact) {

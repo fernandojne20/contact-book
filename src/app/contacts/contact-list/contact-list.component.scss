@@ -1,0 +1,20 @@
+.contact-list-wrapper {
+  color: white;
+  height: 100%;
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 5px;
+  }
+  .contact-list {
+    color: white;
+
+    .contact-list-item {
+      padding: 10px 20px;
+
+      &.selected {
+        background-color: rgb(52, 125, 243);
+      }
+    }
+  }
+}

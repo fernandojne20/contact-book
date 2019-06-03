@@ -1,1 +1,25 @@
 @import '../../partials/directory';
+
+app-contact-list {
+  height: 100%;
+}
+
+.contact-list-container {
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid white;
+    background-color: rgba(30, 31, 32, 0.76);
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin: 20px;
+
+      &.add {
+        background: url(../../../assets/add.png) no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.create-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .create-container {
+    min-width: 500px;
+    height: auto;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+
+    .form-item {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      label {
+        width: 200px;
+      }
+    }
+  }
+}

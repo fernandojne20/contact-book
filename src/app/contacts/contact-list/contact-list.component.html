@@ -1,5 +1,7 @@
 <section class="contact-list-wrapper">
-  <ul *ngFor="let contact of contactsList; trackBy:contact?.identification" >
-    <li (click)="selectContact(contact)"> {{contact.name}}</li>
+  <h1>Contactos</h1>
+  <ul class="contact-list" *ngFor="let contact of contactsList; trackBy:contact?.identification" >
+    <li class="contact-list-item" (click)="selectContact(contact)" [ngClass]="{'selected': contact?.identification  === highlightContact?.identification}"> {{contact.name}} {{contact.lastName}}</li>
   </ul>
+  <h1 *ngIf="contactsList?.length === 0">No hay Registros</h1>
 </section>

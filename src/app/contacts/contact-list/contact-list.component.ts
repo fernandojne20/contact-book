@@ -9,6 +9,7 @@ import { Contact } from '../interfaces/contact';
 export class ContactListComponent implements OnInit {
 
   @Input() contactsList: Array<Contact>;
+  @Input() highlightContact: Contact;
   @Output() selectedContact: EventEmitter<Contact>;
   constructor() {
     this.selectedContact = new EventEmitter<Contact>();

@@ -16,8 +16,17 @@
       color: white;
     }
   }
+
+  .options-list {
+    .nav-option {
+      padding: 10px;
+      color: white;
+
+    }
+
+  }
 }
 
 .router-link-active {
-  background-color: white;
+  background-color: rgb(52, 125, 243);
 }

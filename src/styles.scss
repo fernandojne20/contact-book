@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
 @import './app/partials/reset';
 
 html, body {
   height: 100%;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
 }

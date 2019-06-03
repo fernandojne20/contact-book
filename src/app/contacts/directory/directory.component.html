@@ -1,6 +1,6 @@
 <section class="directory-container">
   <section class="contact-list-container">
-    <app-contact-list [contactsList]="contactsList$ | async" (selectedContact)="selectContact($event)"></app-contact-list>
+    <app-contact-list [contactsList]="contactsList$ | async" [highlightContact]="selectedContact" (selectedContact)="selectContact($event)"></app-contact-list>
   </section>
   <section class="contact-container-detail">
       <app-contact-detail [contact]="selectedContact"></app-contact-detail>
